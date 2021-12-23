@@ -1,0 +1,210 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  background-color: #ea4031;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+.christmas-header {
+  margin: auto;
+  width: 20%;
+}
+#snow-fall {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+}
+/* footer */
+.end {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+.move {
+  position: absolute;
+  max-width: 20%;
+  bottom: 0px;
+  z-index: 1;
+  animation: mymove 10s forwards;
+}
+.move .santa-claus {
+}
+.christmas-tree-snowman {
+  margin-left: auto;
+  max-width: 32%;
+}
+.christmas-tree-snowman .christmas-tree {
+  position: relative;
+  width: 100%;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 70%;
+  }
+}
+
+.gift-1 {
+  width: 15%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  left: 23%;
+  bottom: 25%;
+  opacity: 1;
+}
+.gift-2 {
+  width: 15%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  left: 43%;
+  bottom: 35%;
+  opacity: 1;
+}
+.gift-3 {
+  width: 15%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  left: 63%;
+  bottom: 25%;
+  opacity: 1;
+}
+.bg-black {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+.content {
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+  top: 25%;
+  left: 32%;
+  transform: scale(0.3);
+  position: fixed;
+  z-index: 5;
+  transition: 0.4s;
+}
+.close {
+  text-align: right;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: block;
+  color: grey;
+}
+.title {
+  padding: 10px 5px;
+}
+.video-mp4,
+.video-mp4-1 {
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 10px;
+  transform: scale(0.3);
+  top: 9%;
+  left: 40%;
+  position: absolute;
+  z-index: 5;
+  transition: 0.4s;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.show-bg {
+  visibility: visible;
+  opacity: 0.3;
+}
+@font-face {
+  font-family: merry;
+  src: url(../Pushster-Regular.ttf);
+}
+.title {
+  font-family: merry;
+}
+.title #love {
+  font-size: 28px;
+  color: #df2211;
+  
+}
+@media screen and (max-width: 376px) {
+  .content {
+    width: 300px;
+    height: 300px;
+    left: 2%;
+  }
+  .video-mp4,
+  .video-mp4-1 {
+    left: 10%;
+    top: 10%;
+    right: 10%;
+  }
+  .christmas-header {
+    width: 40%;
+  }
+  .gift-1 {
+    bottom: 40%;
+    width: 25%;
+    left: 10%;
+  }
+  .gift-2 {
+    bottom: 45%;
+    width: 25%;
+    left: 37%;
+  }
+  .gift-3 {
+    bottom: 40%;
+    width: 25%;
+    right: 10%;
+  }
+  .santa-claus {
+    width: 150px;
+  }
+  .christmas-tree-snowman {
+    max-width: 50%;
+  }
+  .move {
+    animation: mymove1 10s forwards;
+  }
+  @keyframes mymove1 {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  .content {
+    left: 8%;
+  }
+  .video-mp4 video,
+  .video-mp4-1 video {
+    width: 100%;
+    height: 80%;
+  }
+  .title #love{
+    font-size: 24px;
+    text-align: center;
+  }
+}
